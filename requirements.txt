@@ -1,1 +1,4 @@
-discord.py==0.16.12
+pip3 freeze > requirements.txt
+
+# Pipenv를 사용하는 경우
+pipenv requirements > requirements.txt
