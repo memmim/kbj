@@ -1,4 +1,5 @@
 import discord
+import os
 
 intents = discord.Intents.all()
 client = discord.Client(intents=intents)
@@ -72,3 +73,8 @@ async def on_message(message):
     
     if message.content == ("화려했던 컬러") :
         await message.channel.send("너와 나의 색깔을 담아 colorful firework")
+
+
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
+
