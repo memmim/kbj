@@ -1,8 +1,7 @@
 import discord
 import os
 
-intents = discord.Intents.all()
-client = discord.Client(intents=intents)
+client = discord.Client()
 
 @client.event
 async def on_message(message):
